@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* PARTIE DU DASH HEAD */
+.dash-container{
+    position: absolute;
+    right: 0;
+    width: 80%;
+    height: 100vh;
+}
+.head-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color:rgb(187, 20, 70);
+    width: 100%;
+    position: relative;
+}
+/* POUR LE TITRE */
+.head-menu .title{
+    width: 35%;
+    color: white;
+    font-size: 26px;
+}
+
+/* POUR LA BARRE DE RECHERCHE */
+.search{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.search input{
+    padding: 10px 30px 10px 10px;
+    width: 23rem;
+    outline: none;
+    border: 1px solid rgb(241, 237, 238);
+    background-color: transparent;
+}
+.search input::placeholder{
+    color: white;
+}
+.search i{
+    position: absolute;
+    right: 10px;
+    color: rgb(245, 243, 243);
+}
+.search i:hover{
+    background-color: rgba(238, 103, 143, 0.692);
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* POUR LA CLOCHE DE NOTIF ET LA DECONNEXION */
+.tools i{
+    font-size: 25px;
+    color: white;
+}
+.tool{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+.tool i:hover{
+    background-color: rgba(238, 103, 143, 0.692);
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.tools{
+    padding: 3rem;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

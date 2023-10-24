@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    min-height: 100vh;
+}
+
+/* PARTIE DU SLIDE-MENU */
+.slide-menu{
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(187, 20, 70);
+}
+.slide-menu .session-user{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+    padding: 5px 10px;
+}
+.session-user i{
+    font-size: 25px;
+}
+.span-logo{
+    color: black;
+}
+.menu{
+    text-align: left;
+}
+.active-link{
+    background-color: white;
+    border-radius: 40px 0 0 40px;
+    padding-left:25px;
+    color: rgb(187, 20, 70) !important;
+    cursor: pointer;
+}
+.menu ul li:hover{
+    background-color: white;
+    border-radius: 40px 0 0 40px;
+    padding-left:25px;
+    color: rgb(187, 20, 70);
+    cursor: pointer;
+}
+.menu ul li {
+    font-size: 22px;
+    line-height: 50px;
+    margin-left: 32px;
+    color: white;
+}
+
+/* PARTIE DU DASH HEAD */
+.dash-container{
+    position: absolute;
+    right: 0;
+    width: 80%;
+    height: 100vh;
+}
+.head-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color:rgb(187, 20, 70);
+    width: 100%;
+    position: relative;
+}
+/* POUR LE TITRE */
+.head-menu .title{
+    width: 35%;
+    color: white;
+    font-size: 26px;
+}
+
+/* POUR LA BARRE DE RECHERCHE */
+.search{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.search input{
+    padding: 10px 30px 10px 10px;
+    width: 23rem;
+    outline: none;
+    border: 1px solid rgb(241, 237, 238);
+    background-color: transparent;
+}
+.search input::placeholder{
+    color: white;
+}
+.search i{
+    position: absolute;
+    right: 10px;
+    color: rgb(245, 243, 243);
+}
+.search i:hover{
+    background-color: rgba(238, 103, 143, 0.692);
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* POUR LA CLOCHE DE NOTIF ET LA DECONNEXION */
+.tools i{
+    font-size: 25px;
+    color: white;
+}
+.tool{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+.tool i:hover{
+    background-color: rgba(238, 103, 143, 0.692);
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.tools{
+    padding: 3rem;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* POUR LES BOX */
+.content{
+    width: 100%;
+    height: 90vh;
+}
+.content .boxes{
+    width: 100%;
+    padding: 2rem;
+    /* background-color: rgba(197, 199, 199, 0.733); */
+    height: max-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.boxes .box{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(187, 20, 70);
+    color: white;
+    width: 250px;
+    justify-content: space-between;
+    padding: 3rem;
+    height: max-content;
+    box-shadow: -2px 1.9px 6px 1px rgba(97, 96, 96, 0.658);
+}
+.boxes .box:hover{
+    background-color: rgba(238, 103, 143, 0.692);
+    color: black;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.box h3{
+    font-size:40px;
+}
+.box i{
+    font-size: 40px;
+}
+.tab{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 1rem;
+}
+.tab .head-table{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+}
+.tab .head-table a{
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    padding: 3px 10px ;
+    background-color: rgb(187, 20, 70);
+}
+.tab .head-table a:hover{
+    background-color: white;
+    color: rgb(187, 20, 70);
+    border: 1px solid rgb(187, 20, 70);
+}
+.tab h2{
+    color: rgb(187, 20, 70);
+}
+.tab .medoc, .facture{
+    background-color: rgb(241, 237, 238);
+    box-shadow: -2px 1.9px 6px 1px rgba(97, 96, 96, 0.658);
+    padding: 10px;
+    width: 55%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.tab  .facture{
+    background-color: rgb(241, 237, 238);
+    box-shadow: -2px 1.9px 6px 1px rgba(97, 96, 96, 0.658);
+    padding: 10px;
+    width: 40%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/* table{
+    margin-top: 8px;
+    padding: 20px;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+th{
+    background-color: rgb(187, 20, 70);
+    color: white;
+}
+td{
+    border-bottom: 1px solid rgb(104, 101, 101);
+}
+tr:hover{
+    cursor: pointer;
+    background-color: rgba(238, 103, 143, 0.692);
+    color: whitesmoke;
+}
+th, td{
+    padding: 7px;
+} */
+.tab table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+th{
+    background-color: rgb(187, 20, 70);
+    color: white;
+}
+td{
+    border-bottom: 1px solid rgb(104, 101, 101);
+}
+tr:hover{
+    cursor: pointer;
+    /* background-color: rgba(238, 103, 143, 0.692);
+    color: whitesmoke; */
+}
+th, td{
+    padding: 7px;
+}
+input{
+    border: none;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    background-color: transparent;
+}

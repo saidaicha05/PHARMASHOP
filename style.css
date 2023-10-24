@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    background-image: url("Pictures/phar3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.mainContent{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.main .logo i{
+    font-size: 40px;
+}
+.main .logo {
+    width: 100%;
+    height: 10vh;
+    padding: 2rem 12rem;
+    align-items: center;
+    display: flex;
+    color: rgb(187, 20, 70);
+}
+.main .content {
+    /* width: max-content; */
+    height: max-content;
+    padding: 4rem 3rem;
+    margin-top: 3rem;
+    position: relative;
+    text-align: left;
+    /* float: right; */
+}
+.main .content h1 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+}
+span {
+    color: rgb(187, 20, 70);
+}
+.span-logo {
+    color: rgb(8, 8, 8);
+}
+.content .btn{
+    margin-top: 2rem;
+}
+.content .btn:hover{
+    background-color: black;
+    color: rgb(187, 20, 70);
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+.content .btn {
+    background-color: rgb(187, 20, 70);
+    width: max-content;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    font-size: 25px;
+    font-weight: 600;
+}
+.login .point{
+    background-color: rgba(255, 255, 255, 0.986);
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    top: -20px;
+    box-shadow: 0px 1.8px 4px 1px rgba(44, 43, 43, 0.87);
+    right: 0;
+    left: 0;
+    border-radius: 50%;
+    position: absolute;
+}
+.login .close{
+    background-color: rgb(187, 20, 70);
+    padding: 3px 8px ;
+    border-radius: 0 0 0 10px;
+    font-size: 2.4em;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+.login .close:hover{
+    background-color: black;
+    color: rgb(187, 20, 70);
+    cursor: pointer;
+}
+.login {
+    overflow: hidden;
+    position: relative;
+    /* float: left; */
+    width: max-content;
+    height: max-content;
+    padding: 2.4rem 2.5rem;
+    backdrop-filter: blur(14px);
+    margin: 10px auto;
+    box-shadow: -2px 1.9px 6px 1px rgb(145, 144, 144);
+    transition: .6s ease-in-out;
+    display: none;
+    transition: transform .5s ease , height .2s ease;
+}
+.login .form-register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+.login.active{
+    height: 575px;
+}
+.login .form-login{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+.login.active .form-register{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+.login.active .form-login{
+    transition: none;
+    transform: translateX(-400px);
+}
+.login h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.login .box{
+    margin-top: 16px;
+    display: grid;
+    gap: 10px;
+}
+.login .box label{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(24, 23, 23);
+}
+.login .box input{
+    outline: none;
+    border: 1px solid rgb(187, 20, 70);
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+}
+.login .box input::placeholder {
+    font-size: 1.08em;
+    color: rgb(58, 56, 56);
+}
+.login .box-remember {
+    display: flex;
+    margin: 10px 0;
+    font-size: 15px;
+}
+.login .box-remember a{
+    color: rgb(187, 20, 70);
+}
+.login .box-remember input{
+    accent-color: rgb(187, 20, 70);
+    margin-right: 5px;
+}
+.login input[type="submit"]{
+    margin-top: 8px;
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border: none;
+    background-color: rgb(187, 20, 70);
+    color: black;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 600;
+}
+.login input[type="submit"]:hover{
+    color: rgb(187, 20, 70);
+    background-color: black;
+}
+.login .register{
+    display: flex;
+    margin-top: 20px;
+}
+.login .register a{
+    color: rgb(187, 20, 70);
+}
+.login-link, .register-link{
+    text-decoration: underline;
+    color: rgb(187, 20, 70);
+    font-weight: 600;
+}
+.login-link:hover, .register-link:hover{
+    cursor: pointer;
+}
